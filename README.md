@@ -40,6 +40,9 @@ bash menu.sh
 
 下载项目中的 `kejilion.sh` 脚本并赋予执行权限，按提示完成 Docker 安装：
 
+这个脚本很强大，有很多功能
+在此感谢 科技lion 大佬的脚本，安装后下次调用也很方便，直接按 k 即可
+
 ```sh
 curl -o kejilion.sh https://raw.githubusercontent.com/lkj0417/alpine-1panel/main/kejilion.sh && chmod +x kejilion.sh && bash kejilion.sh
 ```
@@ -52,11 +55,12 @@ curl -o kejilion.sh https://raw.githubusercontent.com/lkj0417/alpine-1panel/main
 curl -o install_systemctl.sh https://raw.githubusercontent.com/lkj0417/alpine-1panel/main/install_systemctl.sh && chmod +x install_systemctl.sh && bash install_systemctl.sh
 ```
 
-### 5. 按照 1Panel 官方方式安装
+### 5. 按照 1Panel 官方在线安装方式安装
 
 访问 [1Panel 官方文档](https://www.1panel.cn) 并按照在线安装指南进行操作。
 
-在安装完成后，会发生服务启动失败，请继续以下步骤。
+
+### 在安装完成后，会发生服务启动失败，不要慌，请继续以下步骤。
 
 ---
 
