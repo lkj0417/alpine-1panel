@@ -25,11 +25,12 @@
 apk update && apk add curl
 ```
 
-### 2. 纯 IPv6 环境配置 IPv4 出口
+### 2. 纯 IPv6 环境先配置 IPv4 出口
 
 在纯 IPv6 环境下，使用项目中的 `menu.sh` 脚本添加 IPv4 出口：
 
 ```sh
+curl https://raw.githubusercontent.com/lkj0417/alpine-1panel/refs/heads/main/menu.sh # ipv6可能无法使用，可以自行下载menu.sh上传到服务器
 bash menu.sh
 ```
 
@@ -40,9 +41,7 @@ bash menu.sh
 下载项目中的 `kejilion.sh` 脚本并赋予执行权限，按提示完成 Docker 安装：
 
 ```sh
-curl -O https://example.com/kejilion.sh
-chmod +x kejilion.sh
-bash kejilion.sh
+curl -O https://raw.githubusercontent.com/lkj0417/alpine-1panel/refs/heads/main/menu.sh && chmod +x kejilion.sh && bash kejilion.sh
 ```
 
 ### 4. 转译 systemctl 为 OpenRC
@@ -50,9 +49,7 @@ bash kejilion.sh
 下载 `install_systemctl.sh` 脚本并执行，将 systemctl 转译为 OpenRC：
 
 ```sh
-curl -O https://example.com/install_systemctl.sh
-chmod +x install_systemctl.sh
-bash install_systemctl.sh
+curl -O https://raw.githubusercontent.com/lkj0417/alpine-1panel/refs/heads/main/install_systemctl.sh && chmod +x install_systemctl.sh && bash install_systemctl.sh
 ```
 
 ### 5. 按照 1Panel 官方方式安装
@@ -128,6 +125,16 @@ rc-service 1panel status
 
 ```sh
  * status: started
+```
+
+如果顺利可以通过之前安装设置的  ip:端口号/安全路径  登陆1panel面板
+
+
+如果是纯ipv6环境请使用以下命令打开1panel面板的ipv6监听
+
+```sh
+1panel listen-ip ipv6 # 开启面板ipv6监听
+rc-service 1panel restart #重启1panel服务
 ```
 
 ---
