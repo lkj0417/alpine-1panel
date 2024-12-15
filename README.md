@@ -143,4 +143,6 @@ rc-service 1panel restart #重启1panel服务
 
 ---
 
+## Star History
 
+[![Star History Chart](https://api.star-history.com/svg?repos=lkj0417/alpine-1panel&type=Date)](https://star-history.com/#lkj0417/alpine-1panel&Date)
