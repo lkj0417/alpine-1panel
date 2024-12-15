@@ -10,7 +10,7 @@
 
 - IPv6-only 环境添加 IPv4 出口。
 - 配置 Docker 环境。
-- 将 OpenRC 转译为 systemctl。
+- 将 systemctl 转译为 OpenRC。
 - 配置 1Panel 启动脚本，确保服务运行稳定。
 
 ---
