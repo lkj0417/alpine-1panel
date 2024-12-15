@@ -30,7 +30,7 @@ apk update && apk add curl
 在纯 IPv6 环境下，使用项目中的 `menu.sh` 脚本添加 IPv4 出口：
 
 ```sh
-curl https://raw.githubusercontent.com/lkj0417/alpine-1panel/refs/heads/main/menu.sh # ipv6可能无法使用，可以自行下载menu.sh上传到服务器
+curl -o menu.sh https://raw.githubusercontent.com/lkj0417/alpine-1panel/main/menu.sh # ipv6可能无法使用，可以自行下载menu.sh上传到服务器
 bash menu.sh
 ```
 
@@ -41,7 +41,7 @@ bash menu.sh
 下载项目中的 `kejilion.sh` 脚本并赋予执行权限，按提示完成 Docker 安装：
 
 ```sh
-curl -O https://raw.githubusercontent.com/lkj0417/alpine-1panel/refs/heads/main/menu.sh && chmod +x kejilion.sh && bash kejilion.sh
+curl -o kejilion.sh https://raw.githubusercontent.com/lkj0417/alpine-1panel/main/kejilion.sh && chmod +x kejilion.sh && bash kejilion.sh
 ```
 
 ### 4. 转译 systemctl 为 OpenRC
@@ -49,7 +49,7 @@ curl -O https://raw.githubusercontent.com/lkj0417/alpine-1panel/refs/heads/main/
 下载 `install_systemctl.sh` 脚本并执行，将 systemctl 转译为 OpenRC：
 
 ```sh
-curl -O https://raw.githubusercontent.com/lkj0417/alpine-1panel/refs/heads/main/install_systemctl.sh && chmod +x install_systemctl.sh && bash install_systemctl.sh
+curl -o install_systemctl.sh https://raw.githubusercontent.com/lkj0417/alpine-1panel/main/install_systemctl.sh && chmod +x install_systemctl.sh && bash install_systemctl.sh
 ```
 
 ### 5. 按照 1Panel 官方方式安装
