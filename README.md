@@ -42,6 +42,7 @@ bash menu.sh
 
 这个脚本很强大，有很多功能
 在此感谢[kejilion](https://github.com/kejilion) 科技lion 大佬的脚本，安装后下次调用也很方便，直接按 k 即可
+
 原版的脚本链接在这https://github.com/kejilion/sh
 
 ```sh
