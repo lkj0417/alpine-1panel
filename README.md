@@ -19,10 +19,10 @@
 
 ### 1. 更新系统和安装必要工具
 
-首先，更新 Alpine 系统的软件并安装 `curl` 工具：
+首先，更新 Alpine 系统的软件并安装 `curl` 工具和 `findutils`：
 
 ```sh
-apk update && apk add curl
+apk update && apk add curl && apk add findutils
 ```
 
 ### 2. 纯 IPv6 环境先配置 IPv4 出口
